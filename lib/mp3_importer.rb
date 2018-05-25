@@ -6,7 +6,7 @@ class MP3Importer
  end
  
  def files
-   Dir[@path+"/*.mp3"].collect {|file| file.split(/mp3s\//)[1]}
+   Dir[@path+"/*.mp3"].collect {|file| file.split(/mp3/)[1]}
  end
  
  def import
